@@ -1,0 +1,27 @@
+analytics-id: UA-180881113-2
+#Pages
+pages:
+  - {name: 'Episodes', url: 'episodes.html'}
+  - {name: 'About', url: 'about.html'}
+  - {name: 'The Team', url: 'team.html'}
+  - {name: 'Source', url: 'https://github.com/warwickdatasciencesociety/podcast-website'}
+
+social:
+  - {icon: 'facebook', type: "brand", link: 'https://link.wdss.io/facebook'}
+  - {icon: 'linkedin', type: "brand", link: 'https://link.wdss.io/linkedin'}
+  - {icon: 'instagram', type: "brand", link: 'https://link.wdss.io/instagram'}
+  - {icon: 'youtube', type: "brand", link: 'https://link.wdss.io/youtube'}  
+  - {icon: 'envelope', type: "solid", link: 'mailto:podcast@wdss.io'}
+
+websites-podcast:
+  - {name: 'Apple Podcast', link: 'https://podcasts.apple.com/gb/podcast/databasic/id1540645287'}
+  - {name: 'Spotify', link: 'https://open.spotify.com/show/7wmHFy8AGDNHDJXOnXNnWC'}
+  - {name: 'YouTube', link: 'https://www.youtube.com/playlist?list=PLZOhGHnc4_7GwFJrKA6WwJaSm-lujE45P'}
+  - {name: 'RSS', link: 'https://www.databasicpodcast.com/feed.xml'}
+
+translate-date: true #See _includes/date.html to translate the months' name
+shownotes: true
+
+#Disqus
+disqus:
+  disqus_shortname: 

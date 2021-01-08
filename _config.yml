@@ -1,0 +1,57 @@
+# Site settings
+title: "DataBasic"
+description: "A Jekyll Theme designed for Podcasters"
+podcast-description: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
+url:  "https://www.databasicpodcast.com/"
+baseurl: "/"
+author:
+  name: "Warwick Data Science Society"
+  email: "podcast@wdss.io"
+  url: "https://www.wdss.io"
+permalink: pretty
+permalink: /:title
+keywords: [podcast, jekyll]
+
+#Plugins
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
+
+#exclude: [_podcast.rss] #Ignore this, it will be used in case I decide to add rss feed
+
+#Pagination
+paginate: 5
+paginate_path: "/page-:num/"
+
+#Sass
+sass:
+  style: compressed
+  sourcemap: never
+
+#SEO
+twitter:
+  username: PandaSekh
+  card: summary
+facebook:
+  app_id: 
+logo: /assets/img/cover-art.png
+social:
+  name: Alessio Franceschi
+  links:
+    - https://github.com/PandaSekh
+    - https://twitter.com/PandaSekh
+    - https://link.wdss.io/linkedin
+lang: en-GB
+
+#Podcast Metadata. Used by the RSS Feed, which currently isn't in use. So you can avoid this
+podcast_title: Jekyll Podcaster
+podcast_author: Alessio Franceschi
+podcast_email: alessiofranceschi2@gmail.com
+podcast_subtitle: "A Jekyll Theme designed for Podcasters"
+podcast_summary: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
+podcast_description: "A Jekyll Theme designed for Podcasters. This is your podcast's description."
+podcast_explicit: "no"
+podcast_type: serial 
+podcast_lang: en
+podcast_launch: "2019-07-20" #Launch date of your podcast
+podcast_copyright: "&#xA9;Alessio Franceschi"
+podcast_feed: 
+podcast_artwork: "/assets/img/Podcast_Cover.png"
