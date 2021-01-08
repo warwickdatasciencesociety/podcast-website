@@ -41,7 +41,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <itunes:category text="{{ site.podcast_subcategory_one }}" />
 <itunes:category text="{{ site.podcast_subcategory_two }}" />
 </itunes:category>
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   <item>
     <title>{{ post.title }}</title>
     <link>{{ post.url  | absolute_url }}</link>
