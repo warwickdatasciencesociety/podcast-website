@@ -46,7 +46,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     <title>{{ post.title }}</title>
     <link>{{ post.url  | absolute_url }}</link>
     <pubDate>{{ post.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
-    <enclosure url="{{ ep.file }}" length="{{ ep.bytes }}" type="audio/mpeg" />
+    <enclosure url="{{ post.file }}" length="{{ post.bytes }}" type="audio/mpeg" />
   </item>
 {% endfor %}
 </channel>
