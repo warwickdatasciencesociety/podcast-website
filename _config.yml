@@ -1,7 +1,7 @@
 # Site settings
-title: "DataBasic"
-description: "A Jekyll Theme designed for Podcasters"
-podcast-description: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
+title: "DataBasic | Data Science Made Simple"
+description: "DataBasic, a Warwick Data Science Society podcast, is all about making data science simple, cutting through the hype and providing you the information that matters for your development."
+podcast-description: "DataBasic, a Warwick Data Science Society podcast, is all about making data science simple, cutting through the hype and providing you the information that matters for your development."
 url:  "https://www.databasicpodcast.com/"
 baseurl: "/"
 author:
@@ -10,7 +10,7 @@ author:
   url: "https://www.wdss.io"
 permalink: pretty
 permalink: /:title
-keywords: [podcast, jekyll]
+keywords: [podcast, warwick, data, science, society, student, university, wdss, analytics, machine, learning, ai, artificial intelligence, interview, industry, career, business, audio]
 
 #Plugins
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
@@ -28,26 +28,23 @@ sass:
 
 #SEO
 twitter:
-  username: PandaSekh
+  username:
   card: summary
 facebook:
   app_id: 
 logo: /assets/img/cover-art.png
 social:
-  name: Alessio Franceschi
+  name: 
   links:
-    - https://github.com/PandaSekh
-    - https://twitter.com/PandaSekh
-    - https://link.wdss.io/linkedin
 lang: en-GB
 
 #Podcast Metadata. Used by the RSS Feed, which currently isn't in use. So you can avoid this
-podcast_title: Jekyll Podcaster
-podcast_author: Alessio Franceschi
-podcast_email: alessiofranceschi2@gmail.com
-podcast_subtitle: "A Jekyll Theme designed for Podcasters"
-podcast_summary: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
-podcast_description: "A Jekyll Theme designed for Podcasters. This is your podcast's description."
+podcast_title: DataBasic
+podcast_author: Warwick Data Science Society
+podcast_email: podcast@wdss.io
+podcast_subtitle: "Data Science Made Simple"
+podcast_summary: "DataBasic, a Warwick Data Science Society podcast, is all about making data science simple, cutting through the hype and providing you the information that matters for your development."
+podcast_description: "DataBasic, a Warwick Data Science Society podcast, is all about making data science simple, cutting through the hype and providing you the information that matters for your development."
 podcast_explicit: "no"
 podcast_type: serial 
 podcast_lang: en
