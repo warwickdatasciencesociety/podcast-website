@@ -14,7 +14,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
  
 <channel>
 <title>{{ site.podcast_title }}</title>
-<atom:link href="{{ site.url }}/feed/podcast" rel="self" type="application/rss+xml" />
+<atom:link href="{{ site.url }}feed/podcast" rel="self" type="application/rss+xml" />
 <link>{{ site.url }}</link>
 <description>{{ site.podcast_description }}</description>
 <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
@@ -25,7 +25,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <itunes:summary>{{ site.podcast_summary }}</itunes:summary>
 <itunes:author>{{ site.podcast_author }}</itunes:author>
 <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
-<itunes:image href="{{ site.url }}{{ site.podcast_album_art }}" />
+<itunes:image href="{{ site.url }}{{ site.podcast_artwork }}" />
 <itunes:owner>
 <itunes:name>{{ site.podcast_owner }}</itunes:name>
 <itunes:email>{{ site.podcast_email }}</itunes:email>
@@ -34,7 +34,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
 <image>
 <title>{{ site.podcast_title }}</title>
-<url>{{ site.url }}{{ site.podcast_album_art }}</url>
+<url>{{ site.url }}{{ site.podcast_artwork }}</url>
 <link>{{ site.url }}</link>
 </image>
 <itunes:category text="{{ site.podcast_category }}">
@@ -44,9 +44,15 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 {% for post in site.posts %}
   <item>
     <title>{{ post.title }}</title>
+    <author>Warwick Data Science Society</author>
+    <itunes:author>Warwick Data Science Society</itunes:author>
     <link>{{ post.url  | absolute_url }}</link>
     <pubDate>{{ post.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
     <enclosure url="{{ post.file }}" length="{{ post.bytes }}" type="audio/mpeg" />
+    <itunes:duration>{{ post.bytes }}</itunes:duration>
+    <guid isPermaLink="false">{{ post.guid }}</guid>
+    <itunes:explicit>no</itunes:explicit>
+    <description>{{ post.description }}</description>
   </item>
 {% endfor %}
 </channel>
