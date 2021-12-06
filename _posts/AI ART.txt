@@ -1,0 +1,38 @@
+title: "DataBasic #11: Generative Art with Helena Sarin- When technology and art collide"
+layout: post
+categories: [Expert, Industry]
+type: main
+description: In this episode, we have the privilege to talk to Helena Sarin, an engineer turned artist who uses machine learning to create her work. Helena's unique art has been exhibited all over the world; from Zurich, to Dubai, to Miami. In this interview we discuss her artistic process, the intersection of technology and art and society's misconceptions about generative art.
+file: "https://dts.podtrac.com/redirect.mp3/ams3.digitaloceanspaces.com/podcast.wdss/databasic-e9.mp3"
+bytes: 27612372
+length: "29:25"
+videoid: -IH67khBNKc
+guid: dbpod11
+---
+
+Episode Host(s):        
+
+Ana Blanco - https://www.linkedin.com/in/ana-blanco-moreno-1934261b4/
+
+Arman Boroumand - https://www.linkedin.com/in/arman-boroumand-naeini-86965121b
+Episode Guest(s):
+
+Helena Sarrin - https://www.linkedin.com/in/hsarin
+
+------------------
+
+Links:
+
+An Intro to Genrative Art: https://aiartists.org/generative-art-design
+Helena's article: https://thegradientpub.substack.com/p/helena-sarin-on-being-an-ai-artist
+
+------------------
+        
+Follow WDSS on Social Media:
+
+https://link.wdss.io/facebook​
+https://link.wdss.io/linkedin​
+https://link.wdss.io/youtube​
+https://link.wdss.io/instagram​
+        
+Get In Touch: hello@wdss.io
