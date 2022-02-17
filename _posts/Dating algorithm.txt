@@ -1,0 +1,47 @@
+title: "DataBasic #12: Predicting romantic desire- The science behind your favourite dating apps"
+layout: post
+categories: [Expert, Industry]
+type: main
+description: In this episode, we look at two different sides of the online dating game. First, we discuss statistically optimal Tinder strategies with our very own president, Patricio Hernández. Then, we talk to James Davey, the student behind RAW's speed dating algorithm. How close can data science get to predicting love?
+file: "https://dts.podtrac.com/redirect.mp3/ams3.digitaloceanspaces.com/podcast.wdss/databasic-e12.mp3"
+bytes: 208726520
+length: "39:26"
+videoid: -IH67khBNKc
+guid: dbpod12
+---
+
+Episode Host(s):        
+
+Ana Blanco - https://www.linkedin.com/in/ana-blanco-moreno-1934261b4/
+
+Arman Boroumand - https://www.linkedin.com/in/arman-boroumand-naeini-86965121b
+Episode Guest(s):
+
+Patricio Hernández - linkedin.com/in/patriciohdzs
+
+James Davey - linkedin.com/in/james-davey-0aa996197 
+
+------------------
+
+------------------
+        
+Follow WDSS on Social Media:
+
+https://link.wdss.io/facebook​
+https://link.wdss.io/linkedin​
+https://link.wdss.io/youtube​
+https://link.wdss.io/instagram​
+        
+Get In Touch: hello@wdss.io
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
