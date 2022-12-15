@@ -7,7 +7,7 @@ title: The Team
 
 <br>
 
-- Host: [Jacobus Smit](https://www.linkedin.com/in/jacobus-smit/)
-- Segment Host: [Larabella Myers](https://www.linkedin.com/in/larabella-myers/)
+- Podcast Producer: [Ria Govila](https://www.linkedin.com/in/ria-govila-50878976/)
+- Podcast Host: [Alexandru Pascu](https://www.linkedin.com/in/alexandru-pascu/)
 - Webmaster: [Tim Hargreaves](https://www.linkedin.com/in/tim-hargreaves/)
 
