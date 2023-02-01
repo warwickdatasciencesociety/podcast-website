@@ -1,59 +1,226 @@
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-xmlns:content="http://purl.org/rss/1.0/modules/content/"
-xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:atom="http://www.w3.org/2005/Atom"
-xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
->
- 
-<channel>
-<title>{{ site.podcast_title }}</title>
-<atom:link href="{{ site.url }}feed/podcast" rel="self" type="application/rss+xml" />
-<link>{{ site.url }}</link>
-<description>{{ site.podcast_description }}</description>
-<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
-<language>en-US</language>
-<sy:updatePeriod>hourly</sy:updatePeriod>
-<sy:updateFrequency>1</sy:updateFrequency>
-<generator>http://jekyllrb.com</generator>
-<itunes:summary>{{ site.podcast_summary }}</itunes:summary>
-<itunes:author>{{ site.podcast_author }}</itunes:author>
-<itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
-<itunes:image href="{{ site.url }}{{ site.podcast_artwork }}" />
-<itunes:owner>
-<itunes:name>{{ site.podcast_owner }}</itunes:name>
-<itunes:email>{{ site.podcast_email }}</itunes:email>
-</itunes:owner>
-<managingEditor>{{ site.podcast_email }} ({{ site.podcast_owner }})</managingEditor>
-<itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
-<image>
-<title>{{ site.podcast_title }}</title>
-<url>{{ site.url }}{{ site.podcast_artwork }}</url>
-<link>{{ site.url }}</link>
-</image>
-<itunes:category text="{{ site.podcast_category }}">
-<itunes:category text="{{ site.podcast_subcategory_one }}" />
-<itunes:category text="{{ site.podcast_subcategory_two }}" />
-</itunes:category>
-{% for post in site.posts %}
-  <item>
-    <title>{{ post.title }}</title>
-    <author>Warwick Data Science Society</author>
-    <itunes:author>Warwick Data Science Society</itunes:author>
-    <link>{{ post.url  | absolute_url }}</link>
-    <pubDate>{{ post.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
-    <enclosure url="{{ post.file }}" length="{{ post.bytes }}" type="audio/mpeg" />
-    <itunes:duration>{{ post.bytes }}</itunes:duration>
-    <guid isPermaLink="false">{{ post.guid }}</guid>
-    <itunes:explicit>no</itunes:explicit>
-    <description>{{ post.description }}</description>
-  </item>
-{% endfor %}
-</channel>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+	<channel>
+		<title><![CDATA[DataBasic]]></title>
+		<description><![CDATA[DataBasic, a Warwick Data Science Society podcast, is all about making data science simple, cutting through the hype and providing you the information that matters for your development.]]></description>
+		<link>https://www.databasicpodcast.com/</link>
+		<image>
+			<url>https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png</url>
+			<title>DataBasic</title>
+			<link>https://www.databasicpodcast.com/</link>
+		</image>
+		<generator>Anchor Podcasts</generator>
+		<lastBuildDate>Wed, 01 Feb 2023 15:09:47 GMT</lastBuildDate>
+		<atom:link href="https://anchor.fm/s/da17ac34/podcast/rss" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[WDSS]]></author>
+		<copyright><![CDATA[WDSS]]></copyright>
+		<language><![CDATA[en-us]]></language>
+		<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+		<itunes:author>WDSS</itunes:author>
+		<itunes:summary>DataBasic, a Warwick Data Science Society podcast, is all about making data science simple, cutting through the hype and providing you the information that matters for your development.</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>WDSS</itunes:name>
+			<itunes:email>podcast@wdss.io</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:category text="">
+			<itunes:category text=""/>
+		</itunes:category>
+		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		<item>
+			<title><![CDATA[DataBasic #12: Predicting romantic desire- The science behind your favourite dating apps]]></title>
+			<description><![CDATA[In this episode, we look at two different sides of the online dating game. First, we discuss statistically optimal Tinder strategies with our very own president, Patricio Hernández. Then, we talk to James Davey, the student behind RAW's speed dating algorithm. How close can data science get to predicting love?
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-12-Predicting-romantic-desire--The-science-behind-your-favourite-dating-apps-e1u84f4</link>
+			<guid isPermaLink="false">dbpod12</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Thu, 17 Feb 2022 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278436/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250083-44100-2-eca335e397bf6ff8.mp3" length="75760037" type="audio/mpeg"/>
+			<itunes:summary>In this episode, we look at two different sides of the online dating game. First, we discuss statistically optimal Tinder strategies with our very own president, Patricio Hernández. Then, we talk to James Davey, the student behind RAW&apos;s speed dating algorithm. How close can data science get to predicting love?
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:39:27</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #11: Generative Art with Helena Sarin- When technology and art collide]]></title>
+			<description><![CDATA[In this episode, we have the privilege to talk to Helena Sarin, an engineer turned artist who uses machine learning to create her work. Helena's unique art has been exhibited all over the world; from Zurich, to Dubai, to Miami. In this interview we discuss her artistic process, the intersection of technology and art and society's misconceptions about generative art.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-11-Generative-Art-with-Helena-Sarin--When-technology-and-art-collide-e1u84er</link>
+			<guid isPermaLink="false">dbpod11</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278427/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250103-32000-2-22ad4787ab02700d.mp3" length="23256914" type="audio/mpeg"/>
+			<itunes:summary>In this episode, we have the privilege to talk to Helena Sarin, an engineer turned artist who uses machine learning to create her work. Helena&apos;s unique art has been exhibited all over the world; from Zurich, to Dubai, to Miami. In this interview we discuss her artistic process, the intersection of technology and art and society&apos;s misconceptions about generative art.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:29:25</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #10: Football Analytics with David Sumpter—Putting the Beautiful Game into Numbers]]></title>
+			<description><![CDATA[In this episode we talk to David Sumpter a Professor of Applied Mathematics at the University of Uppsala and author of books like "Soccermatics", "Outnumbered" and the "Ten Equations that Rule the World". His mathematical background paired with his passion for football has enabled Dr. Sumpter to consult for clubs and countries like Hammersby, Barcelona and England. Here, we will discuss the different metrics used to analyse football, how professional clubs are embracing data science and what it takes to make it as a football analyst.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-10-Football-Analytics-with-David-SumpterPutting-the-Beautiful-Game-into-Numbers-e1u84ej</link>
+			<guid isPermaLink="false">dbpod10</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278419/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250071-44100-2-6904f544a20bf5aa.mp3" length="19517290" type="audio/mpeg"/>
+			<itunes:summary>In this episode we talk to David Sumpter a Professor of Applied Mathematics at the University of Uppsala and author of books like &quot;Soccermatics&quot;, &quot;Outnumbered&quot; and the &quot;Ten Equations that Rule the World&quot;. His mathematical background paired with his passion for football has enabled Dr. Sumpter to consult for clubs and countries like Hammersby, Barcelona and England. Here, we will discuss the different metrics used to analyse football, how professional clubs are embracing data science and what it takes to make it as a football analyst.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:22:46</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #9: Simon Prinn on The Human Side of Data Science: Teams of Individuals]]></title>
+			<description><![CDATA[As Head of Data Science and Engineering at Walgreens Boots Alliance, Simon Prinn leads a team of over 60 data scientists. In this interview he shares his thoughts on how best to manage and build data science teams, always ensuring to remember the individual in the process.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-9-Simon-Prinn-on-The-Human-Side-of-Data-Science-Teams-of-Individuals-e1u84eo</link>
+			<guid isPermaLink="false">dbpod9</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278424/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250092-44100-2-26c2c96a412f0609.mp3" length="27612372" type="audio/mpeg"/>
+			<itunes:summary>As Head of Data Science and Engineering at Walgreens Boots Alliance, Simon Prinn leads a team of over 60 data scientists. In this interview he shares his thoughts on how best to manage and build data science teams, always ensuring to remember the individual in the process.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:31:29</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #8: Reproducible Data Science with Becky Arnold]]></title>
+			<description><![CDATA[Reproducible data science may not be the flashiest of topics, but considering many companies are willing to pay through the roof to hire someone who specialises in it, it's certainly something worth being aware of. In this episode we talk to Becky Arnold, an astrophysics researcher at Keele University and prominent contributor to The Turing Way, an online guide to doing data science the 'right' way.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-8-Reproducible-Data-Science-with-Becky-Arnold-e1u84ep</link>
+			<guid isPermaLink="false">dbpod8</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278425/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250078-44100-2-3e06475629834fb7.mp3" length="44545627" type="audio/mpeg"/>
+			<itunes:summary>Reproducible data science may not be the flashiest of topics, but considering many companies are willing to pay through the roof to hire someone who specialises in it, it&apos;s certainly something worth being aware of. In this episode we talk to Becky Arnold, an astrophysics researcher at Keele University and prominent contributor to The Turing Way, an online guide to doing data science the &apos;right&apos; way.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:29:04</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #7: Kenneth Lim on the Value of a PhD]]></title>
+			<description><![CDATA[Grad role or PhD? It's a question troubling many undergraduate and master's students. In this episode, Kenneth Lim talks about his experience undertaking a PhD, the pros and cons, as well as current work as part of IBM's Data Science Elite Team. We also feature a segment by Mathematics and Statistics student Kitti Kovac on the topic of differential privacy.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-7-Kenneth-Lim-on-the-Value-of-a-PhD-e1u84eq</link>
+			<guid isPermaLink="false">dbpod7</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 17 Feb 2021 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278426/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250087-44100-2-b032a529afde8b9c.mp3" length="45027016" type="audio/mpeg"/>
+			<itunes:summary>Grad role or PhD? It&apos;s a question troubling many undergraduate and master&apos;s students. In this episode, Kenneth Lim talks about his experience undertaking a PhD, the pros and cons, as well as current work as part of IBM&apos;s Data Science Elite Team. We also feature a segment by Mathematics and Statistics student Kitti Kovac on the topic of differential privacy.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:46:34</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #6: A Year in Review]]></title>
+			<description><![CDATA[2020 was an incredible year of growth for WDSS. In this episode, we are joined by the society President, Tim Hargreaves, to reflect on the last year and the exciting plans for 2021. We are also joined by our new Segment Host, Larabella, to discuss the inspection paradox, a statistical phenomenon that you may not have noticed, but can be found everywhere.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-6-A-Year-in-Review-e1u84en</link>
+			<guid isPermaLink="false">dbpod6</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 20 Jan 2021 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278423/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250093-44100-2-e200c49dd318799c.mp3" length="14024535" type="audio/mpeg"/>
+			<itunes:summary>2020 was an incredible year of growth for WDSS. In this episode, we are joined by the society President, Tim Hargreaves, to reflect on the last year and the exciting plans for 2021. We are also joined by our new Segment Host, Larabella, to discuss the inspection paradox, a statistical phenomenon that you may not have noticed, but can be found everywhere.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:13:21</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #5: Asking the Right Questions with Jane Hutton]]></title>
+			<description><![CDATA[You may think that the hardest part of statistics is knowing the right techniques, but this skill is worthless if you don't know how to ask the right question in the first place. In this episode, we talk to Professor Jane Hutton, who shares here advice on the topic. We also feature a segment in which we discuss the different types of missing values in data and how to handle them.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-5-Asking-the-Right-Questions-with-Jane-Hutton-e1u84es</link>
+			<guid isPermaLink="false">dbpod5</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278428/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250075-48000-2-884e0165b3f98655.mp3" length="58513629" type="audio/mpeg"/>
+			<itunes:summary>You may think that the hardest part of statistics is knowing the right techniques, but this skill is worthless if you don&apos;t know how to ask the right question in the first place. In this episode, we talk to Professor Jane Hutton, who shares here advice on the topic. We also feature a segment in which we discuss the different types of missing values in data and how to handle them.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:51:00</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #4: Jonathan Cave]]></title>
+			<description><![CDATA[In a world increasingly driven by algorithmic decision-making, it is vital that we understand the limitations of such technology. In this episode, Warwick professor Janothan Cave walks through a wide range of examples of algoritms-behaving-badly in health, law, finance, and more. We are feature a segment discussing creativity in machine learning.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-4-Jonathan-Cave-e1u84f7</link>
+			<guid isPermaLink="false">dbpod4</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 18 Nov 2020 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278439/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250085-44100-2-0c1c3526e2154a12.mp3" length="85096928" type="audio/mpeg"/>
+			<itunes:summary>In a world increasingly driven by algorithmic decision-making, it is vital that we understand the limitations of such technology. In this episode, Warwick professor Janothan Cave walks through a wide range of examples of algoritms-behaving-badly in health, law, finance, and more. We are feature a segment discussing creativity in machine learning.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>01:10:54</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #3: AutoML with Shikhar Dev]]></title>
+			<description><![CDATA[AutoML is a hot topic in data science and AI with the potential to reshape the industry. When we did deeper though, we encounter series ethical implications and limitations of the technically. Learn more in this interview with Shikhar Dev, AutoML research at Delft University of Technology. In this episode's segment we talk to Tom Palmer, a Politics student at Warwick, about his experience working with WDSS's research team for his project "The Trump Effect".
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-3-AutoML-with-Shikhar-Dev-e1u84f3</link>
+			<guid isPermaLink="false">dbpod3</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 21 Oct 2020 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278435/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250098-44100-2-52faea055a60e2df.mp3" length="49650415" type="audio/mpeg"/>
+			<itunes:summary>AutoML is a hot topic in data science and AI with the potential to reshape the industry. When we did deeper though, we encounter series ethical implications and limitations of the technically. Learn more in this interview with Shikhar Dev, AutoML research at Delft University of Technology. In this episode&apos;s segment we talk to Tom Palmer, a Politics student at Warwick, about his experience working with WDSS&apos;s research team for his project &quot;The Trump Effect&quot;.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:20:41</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #2: Eric Siegel]]></title>
+			<description><![CDATA[It's hard to find a data science degree that doesn't at some point recommend the book "Predictive Analytics". In this episode, we have the pleasure of being joined by Eric Siegel, author of the Amazon category best-selling book, and coordinator of Predictive Analytics World. Breaking up the interview, our Vice-President, Ciaran, discusses the danger of blackbox models in finance.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-2-Eric-Siegel-e1u84f1</link>
+			<guid isPermaLink="false">dbpod2</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 16 Sep 2020 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278433/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250084-44100-2-02a9b87e35e5f958.mp3" length="71283004" type="audio/mpeg"/>
+			<itunes:summary>It&apos;s hard to find a data science degree that doesn&apos;t at some point recommend the book &quot;Predictive Analytics&quot;. In this episode, we have the pleasure of being joined by Eric Siegel, author of the Amazon category best-selling book, and coordinator of Predictive Analytics World. Breaking up the interview, our Vice-President, Ciaran, discusses the danger of blackbox models in finance.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:29:42</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #1: Julia with Hannes Smit]]></title>
+			<description><![CDATA[You've probably heard of Julia, the relatively new programming language promising the speed of C whilst maintaining the simplicity of Python. That said, is it time for you to start learning? In this episode, we talk to data scientist Johannes Smit to find out. We also feature a segment on Goodhart's law introduced through a series of cautionary tales.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-1-Julia-with-Hannes-Smit-e1u84f8</link>
+			<guid isPermaLink="false">dbpod1</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 19 Aug 2020 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278440/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250102-44100-2-f9d985ef15d06b0c.mp3" length="66122253" type="audio/mpeg"/>
+			<itunes:summary>You&apos;ve probably heard of Julia, the relatively new programming language promising the speed of C whilst maintaining the simplicity of Python. That said, is it time for you to start learning? In this episode, we talk to data scientist Johannes Smit to find out. We also feature a segment on Goodhart&apos;s law introduced through a series of cautionary tales.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:27:33</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+		<item>
+			<title><![CDATA[DataBasic #0: Hello, World!]]></title>
+			<description><![CDATA[In the first episode of DataBasic we discuss what you can expect to see (well, hear) in future episodes and what is currenting going on at WDSS. On top of this there is a segment introducing the basics of Bayesian thinking.
+]]></description>
+			<link>https://anchor.fm/wdss9/episodes/DataBasic-0-Hello--World-e1u84ek</link>
+			<guid isPermaLink="false">dbpod0</guid>
+			<dc:creator><![CDATA[WDSS]]></dc:creator>
+			<pubDate>Wed, 15 Jul 2020 00:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/da17ac34/podcast/play/64278420/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-30%2F310250090-44100-2-2d535647a5466035.mp3" length="8009051" type="audio/mpeg"/>
+			<itunes:summary>In the first episode of DataBasic we discuss what you can expect to see (well, hear) in future episodes and what is currenting going on at WDSS. On top of this there is a segment introducing the basics of Bayesian thinking.
+</itunes:summary>
+			<itunes:explicit>No</itunes:explicit>
+			<itunes:duration>00:08:20</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/36489845/18445a500074b43b.png"/>
+		</item>
+	</channel>
 </rss>
