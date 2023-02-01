@@ -14,7 +14,7 @@ social:
   - {icon: 'envelope', type: "solid", link: 'mailto:podcast@wdss.io'}
 
 websites-podcast:
-  - {name: 'RSS', link: 'https://www.databasicpodcast.com/feed.xml'}
+  - {name: 'RSS', link: 'https://anchor.fm/s/da17ac34/podcast/rss'}
   - {name: 'Apple Podcast', link: 'https://podcasts.apple.com/gb/podcast/databasic/id1540645287'}
   - {name: 'Google Podcast', link: 'https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuZGF0YWJhc2ljcG9kY2FzdC5jb20vZmVlZC54bWw'}
   - {name: 'Spotify', link: 'https://open.spotify.com/show/7wmHFy8AGDNHDJXOnXNnWC'}
